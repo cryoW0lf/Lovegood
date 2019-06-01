@@ -4,17 +4,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AbstractNodeTest {
+class FailedCommandResultTest {
 
     @Test
-    void function() {
-    }
-
-    @Test
-    void argument() {
-    }
-
-    @Test
-    void arguments() {
+    void success() {
+        assertFalse(new FailedCommandResult("").success());
     }
 }
